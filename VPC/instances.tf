@@ -1,6 +1,6 @@
 # Demo Ubuntu Server(t2.medium)
 resource "aws_instance" "Demo_Server" {
-  count                  = 1
+  count                  = 2
   ami                    = var.ubuntuami
   instance_type          = "t2.medium"
   vpc_security_group_ids = [aws_security_group.demo_sg.id]
